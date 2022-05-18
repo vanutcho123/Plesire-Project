@@ -1,0 +1,60 @@
+.intro {
+  padding: 60px 0;
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    color: $clr-gray;
+  }
+  &-icon {
+    i {
+      display: block;
+      color: $clr-primary;
+      font-size: 48px;
+    }
+  }
+  &-title {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  &-text {
+    font-size: 13px;
+    margin-top: 15px;
+  }
+}
+
+/* Large screens ----------- */
+/*some CSS*/
+
+// /* iPads (portrait) ----------- */
+// @media only screen and (max-width : 1024px) {...}
+
+// /* Smartphones (landscape) ----------- */
+// @media only screen and (max-width : 768px) {...}
+
+/* Big smartphones (portrait) (ie: Galaxy 3 has 360)*/
+@media only screen and (max-width: 640px) {
+  .intro {
+    padding: 30px 0;
+    &-text {
+      margin-top: 10px;
+    }
+    &-item {
+      display: flex;
+      gap: 50px;
+    }
+    &-icon {
+      i {
+        font-size: 40px;
+      }
+    }
+  }
+}

@@ -1,0 +1,135 @@
+.search {
+  width: 100%;
+  color: $clr-white;
+  background: url(../assets/image/Search/bg-search.jpg);
+  overflow-x: hidden;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  padding: 80px 0;
+  &-heading {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+  }
+  &-form {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  label {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    max-width: 100%;
+    line-height: 1.5;
+  }
+  .form-group {
+    float: left;
+    margin: 0 10px 0 0;
+    width: 240px;
+  }
+  input.form-control {
+    color: #969595;
+    width: 100%;
+    padding: 10px 10px;
+    line-height: 36px;
+    height: 40px;
+    font-size: 13px;
+    border-radius: 5px;
+  }
+  i.search-icon {
+    position: absolute;
+    background-color: red;
+    right: 0;
+  }
+  select {
+    color: #969595;
+    width: 100%;
+    padding: 5px 10px 5px 10px;
+    line-height: 36px;
+    height: 40px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .form-group .search-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .form-group .search-box > i {
+    color: $clr-gray-light;
+    position: absolute;
+    right: 0;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+  }
+  .form-group .date-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .input-group-addon {
+    height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+    padding: 0 10px;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+  }
+  &-btn {
+    float: left;
+    color: #fff;
+    background: #ff9219;
+    border: 0px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 40px;
+    font-size: 10pt;
+    font-weight: 500;
+    margin: 29px 5px 0 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &:hover {
+      background-color: $clr-gray;
+    }
+  }
+}
+
+/* Large screens ----------- */
+/*some CSS*/
+
+// /* iPads (portrait) ----------- */
+@media only screen and (max-width: 1024px) {
+}
+
+// /* Smartphones (landscape) ----------- */
+@media only screen and (max-width: 768px) {
+  .search {
+    &-heading {
+      font-size: 24px;
+    }
+    .form-group {
+      width: 100%;
+      margin: 0 10px 10px 0;
+    }
+    &-btn {
+      margin: 35px 5px 0 5px;
+    }
+  }
+}

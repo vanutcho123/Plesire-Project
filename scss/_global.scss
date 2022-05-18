@@ -1,0 +1,147 @@
+body {
+  font-family: $clr-ff-primary;
+}
+main {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.wrapper {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.container {
+  padding: 0 70px;
+  margin: 0 auto;
+}
+.active {
+  color: $clr-primary !important;
+}
+
+.btn {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none;
+  letter-spacing: 1;
+  outline: none;
+
+  &-primary {
+    max-width: 174px;
+    padding: 13px 35px;
+
+    font-size: 11pt;
+    font-weight: 500;
+    color: $clr-white;
+    background: rgba(255, 255, 255, 0);
+    border: 3px solid $clr-primary;
+    border-radius: 2px;
+    transition: all 0.4s ease-in-out;
+    margin: 15px 0;
+
+    &:hover {
+      background: $clr-primary;
+    }
+  }
+}
+
+@keyframes botTotop {
+  0% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+@keyframes TopIn {
+  0% {
+    top: 64px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes tranlateZ {
+  0% {
+    transform: translateZ(10px);
+  }
+  100% {
+    transform: translateZ(0);
+  }
+}
+@keyframes TopToBot {
+  0% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.scroll-up-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: $clr-primary;
+  color: $clr-white;
+
+  font-size: 20px;
+  font-weight: 200;
+  padding: 5px 10px;
+  z-index: 1000;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  transition: $transitionAll;
+
+  &:hover {
+    background-color: $clr-black;
+  }
+}
+.scroll-up-btn.show {
+  opacity: 1;
+  animation: botTotop 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 900px) {
+  .btn {
+    &-primary {
+      padding: 10px 30px;
+    }
+  }
+}
+
+/* Big smartphones (portrait) (ie: Galaxy 3 has 360)*/
+@media only screen and (max-width: 640px) {
+  .btn {
+    &-primary {
+      max-width: 150px;
+      padding: 10px 5px;
+      margin: 0;
+      font-size: 10pt;
+    }
+  }
+  .scroll-up-btn {
+    bottom: 40px;
+    right: 20px;
+  }
+}

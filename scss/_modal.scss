@@ -1,0 +1,185 @@
+.modal {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  z-index: 1000;
+  outline: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
+  &-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    color: $clr-black-light;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    cursor: pointer;
+  }
+  &-content {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    top: 40px;
+    margin: 0 auto;
+    background-color: $clr-white;
+    color: $clr-black-light;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    outline: none;
+    animation: TopToBot 0.4s ease-in-out, opacity 0.4s;
+  }
+  &-header {
+    padding: 15px;
+    h4 {
+      display: block;
+      text-align: center;
+      color: $clr-primary;
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1.5;
+      letter-spacing: 1px;
+    }
+  }
+  &-body {
+    padding: 15px;
+  }
+  .form-group {
+    display: block;
+    margin-bottom: 20px;
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+    .form-control {
+      color: $clr-gray-dark;
+      display: block;
+      width: 100%;
+      border: 1px solid $clr-primary;
+      padding: 5px 10px;
+      font-size: 13px;
+      line-height: 24px;
+      border-radius: 2px;
+    }
+  }
+  &-btn {
+    display: block;
+    width: 100%;
+    background-color: $clr-primary;
+    color: $clr-white;
+    font-size: 11pt;
+    letter-spacing: 1px;
+    outline: none;
+    border: none;
+    border-radius: 0;
+    line-height: normal;
+    transition: $transitionAll;
+    padding: 10px 0;
+    cursor: pointer;
+    &:hover {
+      background-color: $clr-gray;
+    }
+  }
+  &-footer {
+    text-align: center;
+    a {
+      display: block;
+      color: $clr-gray-light;
+      text-decoration: none;
+      border-top: 1px solid;
+      padding: 10px 0;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.modal.show {
+  display: block;
+  opacity: 1;
+}
+
+/* iPads (landscape) ----------- */
+
+@media only screen and (max-width: 1224px) {
+  .modal {
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (max-width: 1024px) {
+  .modal {
+    &-content {
+      position: relative;
+      max-width: 350px;
+      width: 100%;
+    }
+  }
+}
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width: 768px) {
+  .modal {
+  }
+}
+
+/* Big smartphones (portrait) (ie: Galaxy 3 has 360)*/
+@media only screen and (max-width: 640px) {
+  .modal {
+    &-content {
+      position: relative;
+      max-width: 300px;
+      width: 100%;
+    }
+    &-header {
+      padding: 15px;
+      h4 {
+        font-size: 20px;
+        font-weight: 700;
+      }
+    }
+
+    .form-group {
+      display: block;
+      margin-bottom: 15px;
+      label {
+        font-size: 11px;
+        font-weight: 700;
+      }
+      .form-control {
+        padding: 5px 7px;
+        font-size: 11px;
+        line-height: 24px;
+      }
+    }
+    &-btn {
+      font-size: 10pt;
+      padding: 7px 0;
+    }
+    &-footer {
+      a {
+        display: block;
+        font-size: 11px;
+        padding: 7px 0;
+      }
+    }
+  }
+}
+
+// /* Smartphones (portrait) (ie: Galaxy 1) */
+// // @media only screen and (max-width: 375px) {
+// // }
+// */

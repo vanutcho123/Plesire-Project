@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plesire | Interactive Travel Template</title>
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="./scss/style.css" />
+    <!-- Link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Water+Brush&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link fontanwesome -->
+    <script
+      src="https://kit.fontawesome.com/b81af1a42d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- link carousel 2 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Date Picker -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <!-- AOS animated-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <header class="header">
+        <div class="container">
+          <div class="header-container">
+            <div class="header-top">
+              <div class="header-top-left">
+                <span>Call Us : +02151 7778 009</span>
+              </div>
+              <div class="header-top-right">
+                <div class="header-social">
+                  <ul class="header-social-list">
+                    <li class="header-social-item">
+                      <a href="" class="header-social-link">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </li>
+
+                    <li class="header-social-item">
+                      <a href="" class="header-social-link">
+                        <i class="fa-brands fa-dribbble"></i>
+                      </a>
+                    </li>
+
+                    <li class="header-social-item">
+                      <a href="" class="header-social-link">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+
+                    <li class="header-social-item">
+                      <a href="" class="header-social-link">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </li>
+
+                    <li class="header-social-item">
+                      <a href="" class="header-social-link">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="header-auth">
+                  <div class="header-auth-login">
+                    <i class="fa-solid fa-lock"></i>
+                    <span>Login</span>
+                  </div>
+
+                  <div class="header-auth-signUp">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Sign Up</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="header-bot">
+              <a href="index.html" class="header-logo">
+                <img src="./assets/logo/logo.png" alt="Logo" />
+              </a>
+              <ul class="header-menu">
+                <li class="header-menu-item">
+                  <a href="#home" class="header-menu-link active"
+                    >Home <i class="fa-solid fa-angle-down"></i
+                  ></a>
+                  <ul class="header-submenu">
+                    <li class="header-submenu-item">
+                      <a href="#" class="header-submenu-link">Mai Index</a>
+                    </li>
+
+                    <li class="header-submenu-item">
+                      <a href="#" class="header-submenu-link"
+                        >Slider Fullscreen</a
+                      >
+                    </li>
+
+                    <li class="header-submenu-item">
+                      <a href="#" class="header-submenu-link">Index New</a>
+                    </li>
+                    <li class="header-submenu-item">
+                      <a href="#" class="header-submenu-link">Intro</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="header-menu-item">
+                  <a href="#info" class="header-menu-link"
+                    >About <i class="fa-solid fa-angle-down"></i>
+                  </a>
+
+                  <ul class="header-submenu">
+                    <li class="header-submenu-item">
+                      <a href="#" class="header-submenu-link">About Us-1</a>
+                    </li>
+
+                    <li class="header-submenu-item">
+                      <a href="#" class="header-submenu-link">About Us-2</a>
+                    </li>
+
+                    <li class="header-submenu-item">
+                      <a href="#" class="header-submenu-link">All Element</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="header-menu-item">
+                  <a href="#gallery" class="header-menu-link"
+                    >Gallery <i class="fa-solid fa-angle-down"></i
+                  ></a>
+
+                  <ul class="header-submenu">
+                    <li class="header-submenu-item">
+                      <a href="#" class="header-submenu-link">Gallery Column</a>
+                    </li>
+
+                    <li class="header-submenu-item">
+                      <a href="#" class="header-submenu-link"
+                        >Gallery Carousel</a
+                      >
+                    </li>
+
+                    <li class="header-submenu-item">
+                      <a href="#" class="header-submenu-link"
+                        >Project Details
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </a>
+
+                      <ul class="header-subsubmenu">
+                        <li class="header-subsubmenu-item">
+                          <a href="" class="header-subsubmenu-link"
+                            >Project Detail 1
+                          </a>
+                        </li>
+
+                        <li class="header-subsubmenu-item">
+                          <a href="" class="header-subsubmenu-link"
+                            >Project Detail 2
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="header-menu-item">
+                  <a href="#tour" class="header-menu-link"
+                    >Destination <i class="fa-solid fa-angle-down"></i
+                  ></a>
+
+                  <ul class="header-submenu">
+                    <li class="header-submenu-item">
+                      <a href="#" class="header-submenu-link">Destination</a>
+                    </li>
+
+                    <li class="header-submenu-item">
+                      <a href="#" class="header-submenu-link"
+                        >Destination 404</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="header-menu-item">
+                  <a href="#intro" class="header-menu-link"
+                    >Services <i class="fa-solid fa-angle-down"></i
+                  ></a>
+
+                  <ul class="header-submenu">
+                    <li class="header-submenu-item">
+                      <a href="#" class="header-submenu-link">Services 1</a>
+                    </li>
+
+                    <li class="header-submenu-item">
+                      <a href="#" class="header-submenu-link">Shop Page</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="header-menu-item">
+                  <a href="#testimony" class="header-menu-link"
+                    >Blog <i class="fa-solid fa-angle-down"></i
+                  ></a>
+
+                  <ul class="header-submenu">
+                    <li class="header-submenu-item">
+                      <a href="#" class="header-submenu-link">Blog single</a>
+                    </li>
+
+                    <li class="header-submenu-item">
+                      <a href="#" class="header-submenu-link">Blog Post</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="header-menu-item">
+                  <a href="#footer" class="header-menu-link">Contact </a>
+                </li>
+              </ul>
+
+              <div class="header-navbar-toggle">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--  -->
+      <!-- scroll to Top -->
+      <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+      </div>
+      <!-- modal login -->
+      <div class="modal modal-login" id="flogin">
+        <div class="modal-container">
+          <div class="modal-content">
+            <button class="modal-close">x</button>
+            <div class="modal-header">
+              <h4>LOGIN</h4>
+            </div>
+            <div class="modal-body">
+              <form action="#">
+                <div class="form-group">
+                  <label>User Name</label>
+                  <input type="text" class="form-control" required="required" />
+                </div>
+
+                <div class="form-group">
+                  <label>Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    required="required"
+                  />
+                </div>
+                <div class="form-group">
+                  <input type="submit" class="modal-btn" value="Log In" />
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <a href="#">Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal signup -->
+      <div class="modal modal-signup" id="fsignup">
+        <div class="modal-container">
+          <div class="modal-content">
+            <button class="modal-close">x</button>
+            <div class="modal-header">
+              <h4>SIGN UP</h4>
+            </div>
+            <div class="modal-body">
+              <form action="#">
+                <div class="form-group">
+                  <label>First Name</label>
+                  <input type="text" class="form-control" required="required" />
+                </div>
+
+                <div class="form-group">
+                  <label>Last Name</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    required="required"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label>Email Address</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    required="required"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label>Username</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    required="required"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label>Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    required="required"
+                  />
+                </div>
+                <div class="form-group">
+                  <input type="submit" class="modal-btn" value="Sign Up" />
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <a href="#">Sign In</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- main -->
+      <main class="main">
+        <!-- home -->
+        <section class="home" id="home">
+          <div class="home-container">
+            <div class="owl-carousel owl-theme">
+              <div class="home-item">
+                <div class="home-img">
+                  <img src="./assets/image/Home/img-slide-1.jpg" alt="" />
+                </div>
+                <div class="home-content">
+                  <h2 class="home-title">Amazing Diversity on Travel</h2>
+                  <p class="home-text">For your vacations</p>
+                  <a href="#" class="btn btn-primary">More Detail</a>
+                </div>
+              </div>
+
+              <div class="home-item">
+                <div class="home-img">
+                  <img src="./assets/image/Home/img-slide-2.jpg" alt="" />
+                </div>
+                <div class="home-content">
+                  <h2 class="home-title">Perfect Place on Vacation</h2>
+                  <p class="home-text">Asia, Africa, Australia</p>
+
+                  <a href="#" class="btn btn-primary">More Detail</a>
+                </div>
+              </div>
+
+              <div class="home-item">
+                <div class="home-img">
+                  <img src="./assets/image/Home/img-slide-3.jpg" alt="" />
+                </div>
+                <div class="home-content">
+                  <h2 class="home-title">The New Adventure Travel</h2>
+                  <p class="home-text">Discover hidden places in the world</p>
+
+                  <a href="#" class="btn btn-primary">More Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- intro -->
+        <section class="intro" id="intro">
+          <div class="container">
+            <div class="intro-container">
+              <div class="intro-item">
+                <div class="intro-icon">
+                  <i class="fa-solid fa-plane"></i>
+                </div>
+                <div class="intro-content">
+                  <h3 class="intro-title">300+ DESTINATION</h3>
+                  <p class="intro-text">Sed ut perspiciatis</p>
+                </div>
+              </div>
+
+              <div class="intro-item">
+                <div class="intro-icon">
+                  <i class="fa-regular fa-credit-card"></i>
+                </div>
+                <div class="intro-content">
+                  <h3 class="intro-title">AFFORDABLE PRICE</h3>
+                  <p class="intro-text">Sit voluptatem accusantium</p>
+                </div>
+              </div>
+
+              <div class="intro-item">
+                <div class="intro-icon">
+                  <i class="fa-regular fa-address-book"></i>
+                </div>
+                <div class="intro-content">
+                  <h3 class="intro-title">GREAT CUSTOMERS</h3>
+                  <p class="intro-text">Perspiciatis unde omnis</p>
+                </div>
+              </div>
+
+              <div class="intro-item">
+                <div class="intro-icon">
+                  <i class="fa-regular fa-handshake"></i>
+                </div>
+                <div class="intro-content">
+                  <h3 class="intro-title">TRUSTED & SAFE</h3>
+                  <p class="intro-text">Accusantium natus</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- search -->
+        <section class="search" id="search">
+          <div class="container">
+            <div class="search-container">
+              <div class="search-main">
+                <h2 class="search-heading">Find your adventure with us</h2>
+                <form action="" class="search-form">
+                  <div class="form-group">
+                    <label for="key">Keyword</label>
+                    <div class="search-box">
+                      <input
+                        type="text"
+                        class="form-control"
+                        required
+                        id="key"
+                      />
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Select your trip</label>
+                    <select name="select-trip" required>
+                      <option value>Any</option>
+                      <option value="#">City Travel</option>
+                      <option value="#">Cultural Travel</option>
+                      <option value="#">Family Travel</option>
+                      <option value="#">Holiday Travel</option>
+                      <option value="#">Luxury Travel</option>
+                      <option value="#">Wild & Adventure Travel</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Destination</label>
+                    <select name="destination" required>
+                      <option value>Any</option>
+                      <option value="#">Asia</option>
+                      <option value="#">Africa</option>
+                      <option value="#">America</option>
+                      <option value="#">Australia</option>
+                      <option value="#">Europe</option>
+                      <option value="#">Rusia</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Duration</label>
+                    <select name="duration" required>
+                      <option value>Any</option>
+                      <option value="#">1 Day Travel</option>
+                      <option value="#">2 Days Travel</option>
+                      <option value="#">3 Days Travel</option>
+                      <option value="#">4 Days Travel</option>
+                      <option value="#">5 Days Travel</option>
+                      <option value="#">1 Week Travel</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>Date</label>
+                    <div id="filterDate2">
+                      <input
+                        type="date"
+                        class="form-control"
+                        placeholder="dd/mm/yyyy"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <input type="submit" class="search-btn" value="FIND NOW" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- tour -->
+        <section class="tour" id="tour">
+          <div class="container">
+            <div class="tour-container">
+              <div class="tour-img">
+                <img src="./assets/image/Tour/img-top-rated.jpg" alt="Tour" />
+              </div>
+              <div class="tour-main">
+                <div class="tour-heading">
+                  <h2 class="tour-title">Top Rated Our Tours</h2>
+                  <p class="tour-text">No mei consectetuer</p>
+                </div>
+                <span class="tour-line"></span>
+                <div class="tour-content">
+                  <p class="tour-desc">
+                    Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi,
+                    id ius elitr saperet,ocurreret pertinacia pri an. No mei
+                    nibh consectetuer
+                  </p>
+                  <ul class="tour-list">
+                    <li class="tour-country">
+                      <a href="#">Vietnamese </a>
+                      <sup>(40)tour</sup>
+                    </li>
+
+                    <li class="tour-country">
+                      <a href="#">Australia </a>
+                      <sup>(40)tour</sup>
+                    </li>
+
+                    <li class="tour-country">
+                      <a href="#">America </a>
+                      <sup>(40)tour</sup>
+                    </li>
+
+                    <li class="tour-country">
+                      <a href="#">Asia </a>
+                      <sup>(40)tour</sup>
+                    </li>
+
+                    <li class="tour-country">
+                      <a href="#">Africa </a>
+                      <sup>(40)tour</sup>
+                    </li>
+
+                    <li class="tour-country">
+                      <a href="#">Japan </a>
+                      <sup>(40)tour</sup>
+                    </li>
+
+                    <li class="tour-country">
+                      <a href="#">Rusia </a>
+                      <sup>(40)tour</sup>
+                    </li>
+                  </ul>
+
+                  <a href="#" class="tour-btn">ALL DESTINATION</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- info -->
+        <section class="info" id="info">
+          <div class="info-container">
+            <ul class="info-list">
+              <li
+                class="info-item"
+                data-aos="zoom-in-up"
+                data-aos-duration="5000"
+              >
+                <div class="info-img">
+                  <img src="./assets/image/Info/bg-serv-1.jpg" alt="" />
+                </div>
+                <div class="info-content">
+                  <h3 class="info-name">
+                    ASIA
+                    <sup>7TOUR</sup>
+                  </h3>
+                  <p class="info-desc">
+                    Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi,
+                    id ius elitr saperet,ocurreret pertinacia pri an. No mei
+                    nibh consectetuer
+                  </p>
+                  <a href="" class="btn btn-primary"> View More </a>
+                </div>
+              </li>
+
+              <li
+                class="info-item"
+                data-aos="zoom-in-up"
+                data-aos-duration="4000"
+              >
+                <div class="info-img">
+                  <img src="./assets/image/Info/bg-serv-2.jpg" alt="" />
+                </div>
+                <div class="info-content">
+                  <h3 class="info-name">
+                    EURO
+                    <sup>8TOUR</sup>
+                  </h3>
+                  <p class="info-desc">
+                    Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi,
+                    id ius elitr saperet,ocurreret pertinacia pri an. No mei
+                    nibh consectetuer
+                  </p>
+                  <a href="" class="btn btn-primary"> View More </a>
+                </div>
+              </li>
+
+              <li
+                class="info-item"
+                data-aos="zoom-in-up"
+                data-aos-duration="3000"
+              >
+                <div class="info-img">
+                  <img src="./assets/image/Info/bg-serv-3.jpg" alt="" />
+                </div>
+                <div class="info-content">
+                  <h3 class="info-name">
+                    AFRICA
+                    <sup>12TOUR</sup>
+                  </h3>
+                  <p class="info-desc">
+                    Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi,
+                    id ius elitr saperet,ocurreret pertinacia pri an. No mei
+                    nibh consectetuer
+                  </p>
+                  <a href="" class="btn btn-primary"> View More </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- testimony -->
+        <section class="testimony" id="testimony">
+          <div class="testimony-container">
+            <div class="testimony-main">
+              <div class="owl-carousel owl-theme second">
+                <div class="testimony-item">
+                  <div class="testimony-content">
+                    <p class="testimony-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                    <div class="testimony-bot">
+                      Someone famous in <span>Source Title</span>
+                    </div>
+                  </div>
+                  <div class="testimony-person">
+                    <img
+                      src="./assets/image/Testimony/44a0b9620430c86e9121.jpg"
+                      alt="NguyenVanHai"
+                    />
+                    <span>Hai Nguyen</span>
+                  </div>
+                </div>
+
+                <div class="testimony-item">
+                  <div class="testimony-content">
+                    <p class="testimony-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                    <div class="testimony-bot">
+                      Someone famous in <span>Source Title</span>
+                    </div>
+                  </div>
+                  <div class="testimony-person">
+                    <img
+                      src="./assets/image/Testimony/44a0b9620430c86e9121.jpg"
+                      alt="NguyenVanHai"
+                    />
+                    <span>Hai Nguyen</span>
+                  </div>
+                </div>
+
+                <div class="testimony-item">
+                  <div class="testimony-content">
+                    <p class="testimony-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                    <div class="testimony-bot">
+                      Someone famous in <span>Source Title</span>
+                    </div>
+                  </div>
+                  <div class="testimony-person">
+                    <img
+                      src="./assets/image/Testimony/44a0b9620430c86e9121.jpg"
+                      alt="NguyenVanHai"
+                    />
+                    <span>Hai Nguyen</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimony-img" data-aos="fade-left">
+              <img src="./assets/image/Testimony/bg-testi.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+        <!-- gallery -->
+        <section class="gallery" id="gallery">
+          <div class="gallery-container" data-aos="fade-up">
+            <div class="owl-carousel owl-theme">
+              <div class="gallery-item">
+                <div class="gallery-img">
+                  <img src="./assets/image/Gallery/img1.jpg" alt="" />
+                </div>
+                <div class="gallery-main">
+                  <div class="gallery-content">
+                    <h2 class="gallery-title">Blue Ocean Island</h2>
+                    <p class="gallery-text">Duration 5 days</p>
+                    <div class="gallery-reviews">
+                      <div class="gallery-reviews-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                      <div class="gallery-reviews-people">
+                        <span class="quantity">1</span>
+                        Reviews
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="gallery-price">
+                    <p>From</p>
+                    <span>1200 $</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <div class="gallery-img">
+                  <img src="./assets/image/Gallery/img2.jpg" alt="" />
+                </div>
+                <div class="gallery-main">
+                  <div class="gallery-content">
+                    <h2 class="gallery-title">Luxury Asia Travel</h2>
+                    <p class="gallery-text">Duration 5 days</p>
+                    <div class="gallery-reviews">
+                      <div class="gallery-reviews-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                      <div class="gallery-reviews-people">
+                        <span class="quantity">1</span>
+                        Reviews
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="gallery-price">
+                    <p>From</p>
+                    <span>1200 $</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <div class="gallery-img">
+                  <img src="./assets/image/Gallery/img3.jpg" alt="" />
+                </div>
+                <div class="gallery-main">
+                  <div class="gallery-content">
+                    <h2 class="gallery-title">Wild Tour Africa</h2>
+                    <p class="gallery-text">Duration 5 days</p>
+                    <div class="gallery-reviews">
+                      <div class="gallery-reviews-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                      <div class="gallery-reviews-people">
+                        <span class="quantity">1</span>
+                        Reviews
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="gallery-price">
+                    <p>From</p>
+                    <span>1200 $</span>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-item">
+                <div class="gallery-img">
+                  <img src="./assets/image/Gallery/img4.jpg" alt="" />
+                </div>
+                <div class="gallery-main">
+                  <div class="gallery-content">
+                    <h2 class="gallery-title">Amazing Diversity Place</h2>
+                    <p class="gallery-text">Duration 5 days</p>
+                    <div class="gallery-reviews">
+                      <div class="gallery-reviews-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                      <div class="gallery-reviews-people">
+                        <span class="quantity">1</span>
+                        Reviews
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="gallery-price">
+                    <p>From</p>
+                    <span>1200 $</span>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-item">
+                <div class="gallery-img">
+                  <img src="./assets/image/Gallery/img5.jpg" alt="" />
+                </div>
+                <div class="gallery-main">
+                  <div class="gallery-content">
+                    <h2 class="gallery-title">The Kingdom of West</h2>
+                    <p class="gallery-text">Duration 5 days</p>
+                    <div class="gallery-reviews">
+                      <div class="gallery-reviews-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                      <div class="gallery-reviews-people">
+                        <span class="quantity">1</span>
+                        Reviews
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="gallery-price">
+                    <p>From</p>
+                    <span>1200 $</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <div class="gallery-img">
+                  <img src="./assets/image/Gallery/img6.jpg" alt="" />
+                </div>
+                <div class="gallery-main">
+                  <div class="gallery-content">
+                    <h2 class="gallery-title">An Asian Temple</h2>
+                    <p class="gallery-text">Duration 5 days</p>
+                    <div class="gallery-reviews">
+                      <div class="gallery-reviews-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                      <div class="gallery-reviews-people">
+                        <span class="quantity">1</span>
+                        Reviews
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="gallery-price">
+                    <p>From</p>
+                    <span>1200 $</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!--  -->
+      <!-- footer -->
+      <footer class="footer" id="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="footer-container">
+              <div class="footer-left">
+                <span class="footer-email"
+                  >Email: hainguyen.061001@gmail.com</span
+                >
+                <span>Collegion: DUY TÂN university</span>
+              </div>
+              <div class="footer-main">
+                <div class="footer-logo">
+                  <img src="./assets/logo/logo.png" alt="" />
+                </div>
+              </div>
+              <div class="footer-right">
+                <span class="footer-address"
+                  >152-Trưng Nữ Vương-Hải Châu-Đà Nẵng</span
+                >
+                <span class="footer-phone">Phone: (+84) 867405503</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bot">
+          <span>Copyright - 20022 Plesire Travel All Right Reserved</span>
+        </div>
+      </footer>
+      <!--  -->
+    </div>
+    <!-- Link javascript -->
+    <script src="./javascript/jquery.js"></script>
+    <script src="./javascript/main.js"></script>
+    <!-- Date Picker -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- AOS animate -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 800,
+        offset: 150,
+        once: false,
+        mirror: true,
+      });
+    </script>
+  </body>
+</html>

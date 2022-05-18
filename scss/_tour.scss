@@ -1,0 +1,123 @@
+.tour {
+  background-color: $clr-white;
+  padding: 90px 0;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-main {
+    flex: 1;
+    padding: 30px;
+  }
+  &-img {
+    flex: 1;
+    background-size: contain;
+    padding: 30px 0;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+  &-title {
+    color: $clr-gray;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  &-text {
+    font-size: 17px;
+    color: $clr-gray-light;
+  }
+  &-line {
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: $clr-primary;
+    margin: 30px 0;
+  }
+  &-desc {
+    color: $clr-black-light;
+    font-size: 13px;
+    margin-bottom: 10px;
+    line-height: 1.9em;
+    letter-spacing: 0.6px;
+  }
+  &-list {
+    display: block;
+  }
+  &-country {
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px 20px 0;
+    border-bottom: 2px solid transparent;
+    &:hover {
+      display: inline-block;
+      border-bottom: 2px solid $clr-primary;
+    }
+    a {
+      color: $clr-black-light;
+      font-size: 19px;
+      display: inline-block;
+      text-decoration: none;
+      padding-bottom: 5px;
+      border: 2px solid $clr-white;
+      line-height: 1.5;
+      letter-spacing: 1px;
+    }
+    sup {
+      color: $clr-gray-light;
+      font-size: 11px;
+      font-style: italic;
+    }
+  }
+  &-btn {
+    position: relative;
+    padding: 8px 20px;
+    font-size: 10pt;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1px;
+    color: $clr-white;
+    background: $clr-primary;
+    border-radius: 2px;
+    border: 3px solid #fc9f1c;
+    outline: none;
+    text-shadow: none;
+    text-decoration: none;
+    margin-top: 17px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: $clr-gray-light;
+      border: 3px solid $clr-gray-light;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .tour {
+    &-container {
+      display: block;
+    }
+    &-country {
+      display: block;
+    }
+    &-line {
+      margin: 20px 0;
+    }
+    &-desc {
+      margin-bottom: 30px;
+    }
+  }
+}
+@media only screen and (max-width: 640px) {
+  .tour {
+    &-line {
+      margin: 10px 0;
+    }
+  }
+}
